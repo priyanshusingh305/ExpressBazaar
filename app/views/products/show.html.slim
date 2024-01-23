@@ -1,0 +1,10 @@
+h1.jumbotron #{ @product.name.capitalize }
+.container
+  .card
+    .card-body
+      p = @product.description
+      p <small> SGD </small> #{ @product.price }
+    .image-container
+      img src="#{@product.image_url}" alt="Image Description"
+    .card-footer
+      = link_to 'Back to Product List', products_path

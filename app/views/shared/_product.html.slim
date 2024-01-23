@@ -1,0 +1,10 @@
+.card
+  .card-body
+    .card-title
+      p #{ product.name }
+    .image-container
+      img src="#{product.image_url}" alt="Image Description"
+    .card-text
+      p <small> SGD </small> #{ product.price }
+    .card-footer
+      = link_to 'View Product', product_path(product)
